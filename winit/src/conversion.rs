@@ -23,6 +23,7 @@ pub fn window_event(
             Some(Event::Window(window::Event::Resized {
                 width: logical_size.width,
                 height: logical_size.height,
+                scale_factor,
             }))
         }
         WindowEvent::ScaleFactorChanged { new_inner_size, .. } => {
@@ -31,6 +32,7 @@ pub fn window_event(
             Some(Event::Window(window::Event::Resized {
                 width: logical_size.width,
                 height: logical_size.height,
+                scale_factor,
             }))
         }
         WindowEvent::CloseRequested => {

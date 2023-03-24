@@ -3,7 +3,7 @@ use crate::time::Instant;
 use std::path::PathBuf;
 
 /// A window-related event.
-#[derive(PartialEq, Eq, Clone, Debug)]
+#[derive(PartialEq, Clone, Debug)]
 pub enum Event {
     /// A window was moved.
     Moved {
@@ -19,6 +19,8 @@ pub enum Event {
         width: u32,
         /// The new logical height of the window
         height: u32,
+        /// The new scale factor of the window
+        scale_factor: f64,
     },
 
     /// A window redraw was requested.
