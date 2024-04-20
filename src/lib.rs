@@ -186,6 +186,8 @@ pub mod settings;
 pub mod time;
 pub mod window;
 
+pub mod tray_application;
+
 #[cfg(feature = "advanced")]
 pub mod advanced;
 

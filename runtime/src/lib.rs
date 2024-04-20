@@ -22,6 +22,8 @@ pub mod window;
 #[cfg(feature = "multi-window")]
 pub mod multi_window;
 
+pub mod tray_window;
+
 // We disable debug capabilities on release builds unless the `debug` feature
 // is explicitly enabled.
 #[cfg(feature = "debug")]

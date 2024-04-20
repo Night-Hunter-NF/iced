@@ -1,8 +1,12 @@
 //! Configure your application.
+pub use iced_winit::settings::{TraySettings, LiveTraySettings, LiveTrayOptions};
+
 use crate::window;
 use crate::{Font, Pixels};
 
 use std::borrow::Cow;
+
+
 
 /// The settings of an iced [`Program`].
 ///

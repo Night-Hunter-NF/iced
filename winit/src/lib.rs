@@ -27,6 +27,8 @@ pub use winit;
 #[cfg(feature = "multi-window")]
 pub mod multi_window;
 
+pub mod tray_application;
+
 #[cfg(feature = "application")]
 pub mod application;
 pub mod clipboard;

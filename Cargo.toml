@@ -175,7 +175,9 @@ web-time = "0.2"
 wgpu = "0.19"
 winapi = "0.3"
 window_clipboard = "0.4.1"
-winit = { git = "https://github.com/iced-rs/winit.git", rev = "592bd152f6d5786fae7d918532d7db752c0d164f" }
+# winit = { git = "https://github.com/iced-rs/winit.git", rev = "592bd152f6d5786fae7d918532d7db752c0d164f" }
+# to be removed when tray windows are merged into iced winit fork 
+winit = {git = "https://github.com/n1ght-hunter/winit.git", rev = "b7373f31f0eb3c265d1c3af5e3deff0c0137b72d"}
 
 [workspace.lints.rust]
 rust_2018_idioms = "forbid"
