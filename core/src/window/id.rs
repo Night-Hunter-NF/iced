@@ -8,11 +8,14 @@ use std::sync::atomic::{self, AtomicU64};
 /// Internally Iced reserves `window::Id::MAIN` for the first window spawned.
 pub struct Id(u64);
 
-static COUNT: AtomicU64 = AtomicU64::new(1);
+static COUNT: AtomicU64 = AtomicU64::new(2);
 
 impl Id {
     /// The reserved window [`Id`] for the first window in an Iced application.
     pub const MAIN: Self = Id(0);
+
+    /// The reserved window [`Id`] for the tray window in an Iced application.
+    pub const TRAY: Self = Id(1);
 
     /// Creates a new unique window [`Id`].
     pub fn unique() -> Id {
